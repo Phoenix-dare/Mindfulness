@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mental Health</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+   
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <h1>Mindfulness App</h1>
+  <p class="intro">Mindfulness is the practice of purposely focusing your attention on the present moment.It's a busy world,let's take a moment to free ourselves.Starting with a breathing exercise.You can use the animation below as a guide.If you want to play a relaxing sound,just click on the play button.  </p>
+<div id="relax_timer">
+
+  <div class="container">
+    <div class="timer">
+    <p id="text"></p>
+  <div class="atom-container">
+    <span class="atom">
+    </span>
+  </div>
+    </div>
+  <div class="outer">
+  </div>
+  </div>
+</div>
+  
+  <div class="music_container">
+      <audio class="audio" src="./rain.mp3"></audio>
+
+<button class="previous">
+        <i class="bi bi-skip-backward-circle-fill"></i></button>
+        <button class="play">
+        <i class="bi bi-play-circle-fill"></i></button>
+      <!--  <button class="pause">
+        <i class="bi bi-pause-circle-fill"></i><button>-->
+        <button class="next">
+       <i class="bi bi-skip-forward-circle-fill"></i></button>
+    </div>
+<div class="write">
+<h3>Mindful Thoughts</h3>
+  <p class="next_step">Writing down what’s on our mind is a meaningful and effective way to process your feelings.This exercise helps the mind to center and reorganize all those spiraling thoughts that leave you in a fog.Write down what you feel now and keep it as a journal to better understand your feelings and thoughts</p>
+  <div class="content_main">
+    <div class="thoughts_area">
+      <form id="note">
+        <label for=""></label>
+        <textarea name="" id="note_area" cols="40" rows="10" placeholder=""></textarea>
+        <br></br>
+        <div id="message"></div>
+        <button class="btn"type="submit">Share</button>
+      </form>
+    </div>
+    <div class="recorded">
+      <h4>Your Thoughts</h4>
+      <div id="content">
+        <div>
+
+          <p></p>
+          <span class="modify">
+            <i class="bi bi-pencil-fill" onClick="editPost(this)"></i>
+            <i class="bi bi-x-circle-fill" onClick="removePost(this)"></i>
+
+          </span>
+
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
